@@ -26,9 +26,9 @@ class Matrix {
   static subtract(a, b) {
     // Return a new Matrix a-b
     let result = new Matrix(a.rows, a.cols);
-    for (let i = 0; i < result.rows; i++) {
-      for (let j = 0; j < result.cols; j++) {
-        result.data[i][j] = a.data[i][j] - b.data[i][j];
+    for (let j = 0; j < result.rows; j++) {
+      for (let i = 0; i < result.cols; i++) {
+        result.data[j][i] = a.data[j][i] - b.data[j][i];
       }
     }
     return result;
